@@ -1,0 +1,119 @@
+section .containerSlider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+    height: max-content;
+
+    position: relative;
+    overflow: hidden;
+    
+}
+
+section .slider input{
+    visibility: hidden;
+    display: none;
+}
+.btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    gap: 10px;
+    z-index: 10;
+}
+.btn label{
+    width: 20px;
+    height: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.slider input:nth-child(1):checked ~ .btn label:nth-child(1),
+.slider input:nth-child(2):checked ~ .btn label:nth-child(2),
+.slider input:nth-child(3):checked ~ .btn label:nth-child(3),
+.slider input:nth-child(4):checked ~ .btn label:nth-child(4){
+
+    opacity: 1;
+    width: 50px;
+
+}
+.contentBox{
+    position: relative;
+    width: 400vw;
+    display: flex;
+    transition: 0.5s;
+}
+
+
+
+.box{
+    position: relative;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    padding: 40px;
+}
+
+.slider input:nth-child(1):checked ~ .contentBox{
+    left: 150vw;
+}
+
+.slider input:nth-child(2):checked ~ .contentBox{
+    left: 50vw;
+}
+.slider input:nth-child(3):checked ~ .contentBox{
+    left: -50vw;
+}
+.slider input:nth-child(4):checked ~ .contentBox{
+    left: -150vw;
+}
+
+#radio1:checked ~ .html{
+    left: 150vw;
+}
+#radio2:checked ~ .css{
+    left: 50vw;
+}
+#radio3:checked ~ .js{
+    left: -50vw;
+}
+#radio4:checked ~ .breve{
+    left: -150vw;
+}
+
+
+.contentBox .box h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.contentBox .box.html i{
+    font-size: 40px;
+    color: orangered;
+}
+
+
+.contentBox .box.css i{
+    font-size: 40px;
+    color: rgb(0, 4, 255);
+}
+.contentBox .box.js i{
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+}
+.contentBox .box.breve h1{
+    font-family: 'Special Elite', cursive;
+}
+
