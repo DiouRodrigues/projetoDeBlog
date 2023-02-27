@@ -18,7 +18,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="header">
         <header>
             <a href="#"><h1>|}i{}U</h1></a>
 
@@ -29,9 +29,11 @@
                 </ul>
             </div><!--nav-->
 
-            <div class="search">
+            <div id="search">
 
-                a
+                <label for="filter" class="sr-only">filter</label>
+                <input type="text" id="filter" placeholder="Filter">
+                <i ><ion-icon name="planet-outline"></ion-icon></i>
 
             </div><!--search-->
         </header>
@@ -63,16 +65,16 @@
                     </div>
 
                     <div class="contentBox">
-                        <div class="box html ">
+                        <div class="box html " >
                             
                                 <h1>HTML</h1>
                                 <i><ion-icon name="logo-html5"></ion-icon></i>
                             </div>
 
-                        <div class="box css">
+                        <div class="box css" >
                             
                             <h1>CSS</h1>
-                            <i><ion-icon name="logo-css3"></ion-icon></i>
+                            <i><ion-icon name="logo-css3" ></ion-icon></i>
                         </div>
 
                         <div class="box js">
@@ -102,18 +104,18 @@
                     </p>
                 </div>
 
-                <div class="aboutPages">
-                    <div class=" box pagesHtml">
+                <div class="aboutPages" id="list">
+                    <div class=" box pagesHtml" id="html">
                         <a href="#"><h1>HTML</h1></a>
                         <p>Primeiros passos</p>
                     </div>
 
-                    <div class=" box pagesCss">
+                    <div class=" box pagesCss" id="css">
                         <a href="#"><h1>CSS</h1></a>
                         <p>Primeiros passos</p>
                     </div>
 
-                    <div class=" box pagesJs">
+                    <div class=" box pagesJs" id="js">
                         <a href="#"><h1>JS</h1></a>
                         <p>Primeiros passos</p>
                     </div>
