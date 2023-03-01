@@ -29,6 +29,7 @@ header{
     background-color: black;
     align-items: center;
     position: fixed;
+    z-index: 999;
 }
 
 header  a {
@@ -125,6 +126,7 @@ section .about{
     flex-direction: column;    
 }
 .about .aboutContent{
+
     padding-top:  100px;
     padding-left: 150px;
 }

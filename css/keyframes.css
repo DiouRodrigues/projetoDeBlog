@@ -1,0 +1,37 @@
+@media screen and (max-width:25rem) {
+    body{
+        display: flex;
+        align-items: center;
+    }
+
+    header {
+        width: 110%;
+    }
+
+    main{
+     width: 100%;
+        
+    }
+
+    main .contentFrist h1{
+        display: flex;
+        font-size: 50px;
+        
+    }
+    section{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+   .about .aboutContent{
+    display: flex;
+    
+   }
+
+    .aboutPages {
+        flex-direction: column;
+    }
+
+    
+    
+    }
